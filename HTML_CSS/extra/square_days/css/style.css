@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box; /*Gjør alle elemnter om til border-box som standard, padding og border er da ikke med på utregning av størrelse */
+}
+/* Legg til dette for å fjerne marginene
+body {
+    margin: 0;
+    padding: 0;
+  }
+ */
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+  left: 0px;
+}
+
+label {
+  font-size: 1.5rem;
+  color: white;
+}
+nav {
+  position: absolute;
+  background-color: #333;
+  padding: 0px 20px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  line-height: 1.5rem;
+}
+header {
+  position: relative;
+  background-color: #333;
+  padding: 16px;
+}
+
+.hero {
+  height: 400px;
+  background-color: orange;
+  background-image: url(../images/sol2.jpg);
+  background-size: cover; /* bilde fyller containeren*/
+  background-position: center; /*midten av bakgrunnsbilde blir midt i containeren*/
+  display: flex;
+  /* flex-direction: row;       standard flex retning når man skriver display: flex;*/
+  /*flex-direction: column;     endrer flex retning, align og justify bytter*/
+  justify-content: center; /* sentrerer elementer langs flex direction*/
+  align-items: center; /* sentrerer elementer langs andre aksen */
+}
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+}
+.hero p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 2rem;
+}
+.btn-primary {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: orange;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+}
+.main-section {
+  background-color: #333;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.container div {
+  flex: 1 1 0; /*div inne i containeren får flex-grow: 1, flex-shrink: 1 og flex-basis: 0; */
+}
+.image-1,
+.image-2 {
+  min-height: 300px;
+  width: 100%;
+
+  background-color: aqua;
+  background-image: url(../images/drage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.wrapper {
+  padding: 1rem;
+}
+.text-1,
+.text-2 {
+  background-color: #777;
+}
+
+.image-2 {
+  order: 1; /*rekkefølgene elementene ligger  i en flex container, kan bruke "reverse" verdien når det bare er to*/
+}
+.text-2 {
+  order: 2;
+}
+
+@media (min-width: 600px) {
+  /*når skjermen er større en 600px gjelder disse reglene, dette er mobile first*/
+  header label {
+    display: none;
+  }
+  nav {
+    display: block;
+
+    position: static;
+  }
+  nav a {
+    display: inline-block;
+    margin-left: 24px;
+  }
+  .container {
+    flex-direction: row;
+    flex: 1 1 0;
+  }
+  .image-2 {
+    order: 2;
+  }
+  .text-2 {
+    order: 1;
+  }
+}
