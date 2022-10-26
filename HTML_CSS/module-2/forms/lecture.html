@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="submit.html" method="GET">
+      <fieldset>
+        <legend>Personlig informasjon</legend>
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname" placeholder="First Name" required />
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname" placeholder="Last name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Date</legend>
+        <label for="date">Date</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          min="2022-10-10"
+          max="2022-11-01"
+        />
+        <label for="date_with_time">Date and time</label>
+        <input type="datetime-local" name="date_with_time" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Boxes</legend>
+        <label for="checkbox">Checkboxes</label>
+        <input type="checkbox" name="checkbox" />
+        <input type="checkbox" name="checkbox" />
+        <input type="checkbox" name="checkbox" />
+
+        <label for="radio">Radio buttons</label>
+        <input type="radio" name="radio" />
+        <input type="radio" name="radio" />
+        <input type="radio" name="radio" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Extra</legend>
+        <label for="number">Input field for numbers</label>
+        <input type="number" id="number" name="number" />
+        <label for="password">Input field for passwords</label>
+        <input type="password" name="password" required />
+        <label for="color">Color picker</label>
+        <input
+          type="color"
+          onchange="changeColor()"
+          id="color"
+          name="color"
+          style="width: 100px; height: 50px"
+        />
+        <h3 id="color-text">#000000</h3>
+
+        <label for="message"
+          >Text area where the user can input multiple lines of text</label
+        >
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+      </fieldset>
+
+      <input type="submit" />
+    </form>
+    <script>
+      function changeColor() {
+        let color = document.querySelector("#color").value;
+        document.querySelector("#color-text").innerHTML = color;
+        document.querySelector("#color-text").style.color = color;
+      }
+    </script>
+  </body>
+</html>

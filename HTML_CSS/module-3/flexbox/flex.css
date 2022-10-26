@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 200px;
+  height: 120px;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  border: 1px solid lime;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+article {
+  border: 1px solid orange;
+  min-width: 320px;
+  width: 30%;
+}
+.row-1-2 {
+  width: 48%;
+}

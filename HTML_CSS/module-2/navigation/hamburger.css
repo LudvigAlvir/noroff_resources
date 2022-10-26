@@ -1,0 +1,45 @@
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+  left: 0px;
+}
+
+label {
+  font-size: 1.5rem;
+  color: white;
+}
+nav {
+  position: absolute;
+  background-color: #333;
+  padding: 0px 20px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  line-height: 1.5rem;
+}
+header {
+  position: relative;
+  background-color: #333;
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  header label {
+    display: none;
+  }
+  nav {
+    display: block;
+
+    position: static;
+  }
+  nav a {
+    display: inline-block;
+    margin-left: 24px;
+  }
+}

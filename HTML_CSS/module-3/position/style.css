@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #999;
+}
+
+.img {
+  height: 100px;
+  width: 100%;
+  border: solid 1px black;
+}
+
+article {
+  display: inline-block;
+  border: 1px solid lime;
+  width: 32%;
+}
+
+@media (max-width: 1000px) {
+  article {
+    width: 49%;
+  }
+  .img {
+    background-color: aqua;
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+  .img {
+    background-color: orange;
+  }
+}

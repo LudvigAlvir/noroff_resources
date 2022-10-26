@@ -1,0 +1,8 @@
+div {
+  width: 450px;
+  height: 200px;
+  background-image: url(https://finn-content-hub.imgix.net/bilder/kj%C3%B8pe-hund-les-dette-GettyImages-465377790.jpg?auto=format&crop=focalpoint&domain=finn-content-hub.imgix.net&fit=crop&fp-x=0.5&fp-y=0.3103&h=630&ixlib=php-3.3.1&q=82&w=1200);
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+}

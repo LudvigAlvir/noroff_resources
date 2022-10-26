@@ -10,3 +10,7 @@ h1 {
 .farge2 {
   color: orange;
 }
+
+div h1 {
+  color: red;
+}
