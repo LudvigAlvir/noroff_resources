@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  min-height: 100%;
+}
+
+.grid-1,
+.grid-2 {
+  width: 50%;
+  display: grid;
+  border: 1px solid black;
+  min-height: 100px;
+}
+.grid-1 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.item {
+  border: 1px solid lime;
+  height: 100%;
+  width: 100%;
+}
+.red {
+  background-color: rgb(183, 12, 12);
+  padding: 50px;
+}
+
+.green {
+  background-color: rgb(33, 128, 33);
+}
