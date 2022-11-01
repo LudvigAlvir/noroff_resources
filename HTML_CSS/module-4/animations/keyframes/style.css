@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.ball {
+  position: relative;
+  top: 300px;
+  height: 50px;
+  width: 50px;
+  background: red;
+  border-radius: 50%;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    top: 300px;
+  }
+  10% {
+    top: 200px;
+  }
+  20% {
+    top: 125px;
+  }
+  30% {
+    top: 75px;
+  }
+  40% {
+    top: 25px;
+  }
+  46% {
+    top: 5px;
+  }
+
+  50% {
+    top: 0px;
+  }
+
+  54% {
+    top: 5px;
+  }
+  60% {
+    top: 25px;
+  }
+  70% {
+    top: 75px;
+  }
+  80% {
+    top: 125px;
+  }
+  90% {
+    top: 200px;
+  }
+  100% {
+    top: 300px;
+  }
+}

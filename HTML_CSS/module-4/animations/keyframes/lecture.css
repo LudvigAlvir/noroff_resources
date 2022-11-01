@@ -1,0 +1,27 @@
+.ball {
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  position: relative;
+  top: 300px;
+  height: 50px;
+  width: 50px;
+  background: red;
+  border-radius: 50%;
+}
+
+@keyframes bounce {
+  0% {
+    left: 0px;
+    top: 300px;
+  }
+  50% {
+    left: 100px;
+    top: 0px;
+  }
+  100% {
+    top: 300px;
+    left: 200px;
+  }
+}

@@ -1,0 +1,34 @@
+main {
+  display: flex;
+}
+div {
+  min-height: 3rem;
+  background-color: lime;
+  margin: 1rem;
+  transition: 1s;
+}
+
+.change-color:hover {
+  background-color: orange;
+}
+
+.scales:hover {
+  scale: 1.5;
+}
+
+.font-size:hover {
+  font-size: 2rem;
+}
+.moves:active {
+  transform: translateX(3rem);
+}
+.rotates:active {
+  rotate: 360deg;
+}
+/*
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+*/
