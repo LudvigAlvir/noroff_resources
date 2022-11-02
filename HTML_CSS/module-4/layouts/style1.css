@@ -1,0 +1,206 @@
+:root {
+  font-size: 62.5%;
+  --color-primary: rgb(210, 8, 38);
+  --color-secondary: #013251;
+  --color-tertiary: #eee;
+  --color-background: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.header-content {
+  height: 8rem;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+}
+.menu-items {
+  font-size: 3rem;
+  display: none;
+  padding: 1rem;
+  line-height: 3rem;
+
+  background-color: var(--color-secondary);
+}
+.menu-items a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu-checkbox {
+  display: none;
+}
+#menu-checkbox:checked ~ .menu-items {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 8rem;
+  background-color: var(--color-primary);
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+.header-content-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  color: white;
+}
+.search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.search-field {
+  height: 60%;
+  font-size: 2rem;
+  border: none;
+  background-color: var(--color-tertiary);
+}
+.search-icon {
+  color: rgb(75, 73, 73);
+  font-size: 3rem;
+  padding: 2rem;
+  background-color: var(--color-tertiary);
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: var(--color-secondary);
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  height: 100%;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.header-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: var(--color-secondary);
+  height: 8rem;
+  color: white;
+  width: 100%;
+  gap: 1rem;
+}
+.header-secondary a {
+  color: var(--color-tertiary);
+}
+
+.main-content {
+  background-image: url(../../extra/square_days/images/sol2.jpg);
+  width: 100%;
+  min-height: 40vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container {
+  background-color: var(--color-tertiary);
+  width: clamp(32rem, 100rem, 90%);
+  min-height: 15rem;
+}
+.content-form {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.origin-container,
+.destination-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 45%;
+  box-shadow: 0 5px rgb(83, 81, 81);
+}
+.origin-container input,
+.destination-container input {
+  border: none;
+  min-height: 7rem;
+}
+.content-tabs input[type="radio"] {
+  display: none;
+}
+.content-tabs {
+  min-height: 5rem;
+  display: flex;
+  width: 90%;
+  gap: 2rem;
+  margin-top: 0rem;
+}
+.content-tabs label {
+  background-color: var(--color-secondary);
+  padding: 0 3rem;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.content-tabs input:checked + label {
+  background-color: var(--color-tertiary);
+  padding: 0 3rem;
+  font-size: 2rem;
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+}
+.content-footer {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.order-btn {
+  color: white;
+  background-color: var(--color-primary);
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.advertisement {
+  padding: 10%;
+  background-color: var(--color-tertiary);
+}
+.advertisement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.img {
+  width: 100%;
+  min-height: 15rem;
+  background-color: blue;
+}
+article {
+  background-color: white;
+}
