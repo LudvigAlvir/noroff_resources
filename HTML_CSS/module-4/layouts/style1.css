@@ -112,7 +112,7 @@ body {
 }
 
 .main-content {
-  background-image: url(../../extra/square_days/images/sol2.jpg);
+  background-image: url(images/sol2.jpg);
   width: 100%;
   min-height: 40vh;
   background-position: center;
