@@ -1,0 +1,68 @@
+:root {
+  --background-color: blue;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 500px;
+  width: 800px;
+  background-color: var(--background-color);
+  transition: 0.5s;
+}
+
+label {
+  font-size: 3rem;
+}
+input {
+  display: none;
+}
+.intro {
+  display: none;
+  font-size: 2rem;
+}
+.item-1 {
+  display: none;
+  height: 100%;
+  font-size: 2rem;
+}
+.item-2 {
+  display: none;
+  height: 100%;
+  font-size: 2rem;
+  padding: 2rem;
+}
+input:checked + label {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+/*
+IKKE STØTTET I FIREFOX
+
+:has psudoelementet er ikke støttet av alle nettlesere enda
+*/
+:root:has(#nr1:checked) {
+  --background-color: red;
+}
+
+:root:has(#nr2:checked) .container {
+  --background-color: green;
+}
+:root:has(#nr3:checked) {
+  --background-color: yellow;
+}
+:root:has(#nr1:checked) .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root:has(#nr2:checked) .item-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root:has(#nr3:checked) .item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
