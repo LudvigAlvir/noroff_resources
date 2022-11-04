@@ -35,5 +35,22 @@
         </div>
       </div>
     </main>
+    <script>
+      function test() {
+        if (
+          document.querySelector("html:has(i ~ button) i") ===
+          document.querySelector("i:has(~ button")
+        ) {
+          alert(
+            "Your browser does not yet have full support for the ':has()' selector!"
+          );
+        }
+      }
+      try {
+        test();
+      } catch (error) {
+        alert("Your browser does not support the :has selector");
+      }
+    </script>
   </body>
 </html>
