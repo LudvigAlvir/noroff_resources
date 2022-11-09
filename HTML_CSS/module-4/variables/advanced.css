@@ -1,9 +1,12 @@
 :root {
   --background-color: blue;
 }
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
+
 .container {
   height: 500px;
   width: 800px;
