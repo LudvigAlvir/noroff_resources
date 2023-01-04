@@ -10,11 +10,17 @@ _footer: "@2022 [Ludvig Alvir](https://www.noroff.no/en/contact/staff/) using [M
 ---
 
 <!-- prettier-ignore -->
-#
+# System development life cycle
 
-<!-- prettier-ignore -->
-```css
+##
 
-
-
-```
+- iterations
+- person centrific
+- smaller changes
+- fast
+- scrum sprints
+- kanban rapid changes
+- individer over verktøy
+- fungerende programvare over dokumentasjon
+- samarbeid med kunde over kontrakt skriving
+- være fleksibel i stedet for å følge plan
