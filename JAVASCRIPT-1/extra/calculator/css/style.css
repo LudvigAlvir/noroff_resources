@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+button {
+	height: 4rem;
+}
+input {
+	height: 3rem;
+	width: 100%;
+}
