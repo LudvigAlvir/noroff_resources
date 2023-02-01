@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.circle {
+	margin-top: 10px;
+	width: 30px;
+	height: 30px;
+	border-top: 4px solid green;
+	border-radius: 50%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	animation: 3s loading infinite linear;
+}
+.inner-circle {
+	width: 20px;
+	height: 20px;
+	border-bottom: 4px solid purple;
+	border-radius: 50%;
+	animation: 3s loading infinite linear;
+}
+.show {
+	display: flex;
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
