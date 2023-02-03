@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+}
+.counter {
+	font-size: 100px;
+}
+.container {
+	height: 100vh;
+	position: fixed;
+	width: 100vw;
+	overflow: hidden;
+	z-index: 1;
+}
+main {
+	z-index: 10;
+}
+.ball,
+.second-ball {
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	opacity: 40%;
+	transition: 2s;
+}
+.second-ball {
+	background-color: blue;
+}
+.second-container,
+.third-container {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 2s;
+}
+.move {
+	border-radius: 50%;
+	rotate: 360deg;
+}

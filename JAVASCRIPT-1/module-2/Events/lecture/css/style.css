@@ -1,0 +1,28 @@
+.counter {
+	font-size: 100px;
+}
+.container {
+	height: 80vh;
+	position: relative;
+	width: 100%;
+}
+
+.ball {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	transition: 1s;
+}
+.second-container {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+.move {
+	border-radius: 50%;
+	rotate: 360deg;
+}
