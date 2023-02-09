@@ -4,24 +4,33 @@ let flags = "religious,political";
 let jokeType = "";
 let amount = 5;
 
-fetch(
-	`https://v2.jokeapi.dev/joke/${type}
-	?blacklistFlags=${flags}
-	&type=${jokeType}
-	&amount=${amount}`
-).then((response) =>
-	response.json().then((data) => {
-		if (amount > 1) {
-			//if there are more than one joke
-			data.jokes.forEach((joke) => {
-				appendJoke(joke);
-			});
-		} else {
-			// if there is one joke
-			appendJoke(data);
-		}
-	})
-);
+document.querySelector("button").addEventListener("click", validate);
+
+function validate() {
+	getJokes();
+}
+
+async function getJokes() {
+	fetch(
+		`https://v2.jokeapi.dev/joke/${type}
+		?blacklistFlags=${flags}
+		&type=${jokeType}
+		&amount=${amount}`
+	).then((response) =>
+		response.json().then((data) => {
+			if (amount > 1) {
+				//if there are more than one joke
+				data.jokes.forEach((joke) => {
+					appendJoke(joke);
+				});
+			} else {
+				// if there is one joke
+				appendJoke(data);
+			}
+		})
+	);
+}
+
 //function that adds the joke to the DOM
 function appendJoke(joke) {
 	if (joke.setup) {
