@@ -1,23 +1,29 @@
 const url = "https://v2.jokeapi.dev/joke/";
-let type = "Any";
+let category = "Any";
 let flags = "religious,political";
-let jokeType = "";
+let type = ""; // "single" eller "twopart"
 let amount = 5;
 
-document.querySelector("button").addEventListener("click", validate);
+document.querySelector("#submit").addEventListener("click", validate);
+const amountInput = document.querySelector("#amount");
 
 function validate() {
+	amount = amountInput.value;
+	type = document.querySelector("#type").value;
+
 	getJokes();
 }
 
 async function getJokes() {
+	document.querySelector(".jokes").innerHTML = "";
 	fetch(
-		`https://v2.jokeapi.dev/joke/${type}
+		`${url}${category}
 		?blacklistFlags=${flags}
-		&type=${jokeType}
+		&type=${type}
 		&amount=${amount}`
-	).then((response) =>
-		response.json().then((data) => {
+	)
+		.then((response) => response.json())
+		.then((data) => {
 			if (amount > 1) {
 				//if there are more than one joke
 				data.jokes.forEach((joke) => {
@@ -27,8 +33,7 @@ async function getJokes() {
 				// if there is one joke
 				appendJoke(data);
 			}
-		})
-	);
+		});
 }
 
 //function that adds the joke to the DOM
