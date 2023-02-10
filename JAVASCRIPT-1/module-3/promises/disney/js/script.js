@@ -61,6 +61,6 @@ next.addEventListener("click", () => {
 	getCharacters();
 });
 
-const regEx = /\S+@+gmail.com/;
+const regEx = /\S+@\S+\.\S+/;
 
 "hei@gmail.com".test(regEx);
