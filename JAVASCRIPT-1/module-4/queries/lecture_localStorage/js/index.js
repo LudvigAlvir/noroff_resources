@@ -20,7 +20,6 @@ function addJokes(joke) {
 		jokeLink.addEventListener("click", (e) => {
 			localStorage.setItem("id", joke.id);
 			alert(localStorage.getItem("id"));
-			//window.location.href = "joke.html";
 		});
 		document.querySelector("body").append(container);
 	} else if (joke.type === "twopart") {
@@ -37,7 +36,6 @@ function addJokes(joke) {
 		jokeLink.addEventListener("click", (e) => {
 			localStorage.setItem("id", joke.id);
 			alert(localStorage.getItem("id"));
-			//window.location.href = "joke.html";
 		});
 	} else {
 		document.querySelector("body").innerHTML = "<h1>ERROR</h1>";
