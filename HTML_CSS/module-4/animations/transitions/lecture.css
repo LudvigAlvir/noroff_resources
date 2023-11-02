@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.square {
+  background-color: lime;
+  height: 100px;
+  width: 100px;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+.square:active {
+  background-color: orange;
+  border-radius: 100px;
+  /* transform: translateY(100px); */
+  /* rotate: 180deg; */
+  transform: translateX(700px);
+}

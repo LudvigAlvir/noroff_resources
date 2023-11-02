@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #999;
+  gap: 1rem;
+}
+
+.item {
+  width: 33%;
+  min-height: 200px;
+  background-color: blue;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}

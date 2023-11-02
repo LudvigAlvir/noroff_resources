@@ -1,3 +1,16 @@
-* {
-    color: orangered;
+h1 {
+  font-size: 40px;
+  color: orangered;
+}
+
+.farge1 {
+  color: red;
+}
+
+.farge2 {
+  color: orange;
+}
+
+div h1 {
+  color: red;
 }

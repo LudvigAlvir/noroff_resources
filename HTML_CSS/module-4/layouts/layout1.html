@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>norwegian rip off</title>
+    <meta name="description" content="Content for description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/349a7d6f47.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header class="header-primary">
+      <div class="header-content">
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-checkbox" />
+          <label class="menu" for="menu-checkbox">
+            <i class="fas fa-bars"></i>
+          </label>
+          <nav class="menu-items">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+          </nav>
+        </div>
+
+        <div class="header-content-right">
+          <div class="search">
+            <input type="text" class="search-field" placeholder="Søk" />
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+          <div class="profile">Logg inn / Finn reservasjoner</div>
+          <div class="logo"><h1>norwegian</h1></div>
+        </div>
+      </div>
+      <div class="header-secondary">
+        <i class="fa-solid fa-arrow-right"></i>
+        <a href="#">Viktig reiseinformasjon</a>
+      </div>
+    </header>
+    <main>
+      <section class="main-content">
+        <div class="content-container">
+          <header class="content-tabs">
+            <input type="radio" name="tab" id="radio-flights" checked />
+            <label class="label-flights" for="radio-flights">Fly</label>
+            <input type="radio" name="tab" id="radio-business" />
+            <label class="label-business" for="radio-business">Bedrift</label>
+            <input type="radio" name="tab" id="radio-rental" />
+            <label class="label-rental" for="radio-rental">Leiebil</label>
+            <input type="radio" name="tab" id="radio-hotel" />
+            <label class="label-hotel" for="radio-hotel">Hotell</label>
+          </header>
+          <div class="content-form">
+            <div class="origin-container">
+              <label for="origin">Fra</label>
+              <input list="origins" name="origin" id="destination" />
+              <datalist id="origins">
+                <option value="Oslo"></option>
+                <option value="Rome"></option>
+                <option value="Berlin"></option>
+                <option value="Oslo"></option>
+                <option value="Rome"></option>
+                <option value="Berlin"></option>
+                <option value="Oslo"></option>
+                <option value="Rome"></option>
+                <option value="Berlin"></option>
+              </datalist>
+            </div>
+
+            <div class="destination-container">
+              <label for="destination">Til</label>
+              <input list="destinations" name="destination" id="destination" />
+              <datalist id="destinations">
+                <option value="Oslo"></option>
+                <option value="Rome"></option>
+                <option value="Berlin"></option>
+                <option value="Oslo"></option>
+                <option value="Rome"></option>
+                <option value="Berlin"></option>
+                <option value="Oslo"></option>
+                <option value="Rome"></option>
+                <option value="Berlin"></option>
+              </datalist>
+            </div>
+          </div>
+          <footer class="content-footer">
+            <div class="wrapper-lowfare">
+              <input type="checkbox" id="lowprice" />
+              <label for="lowprice">Vis Lavpriskalender</label>
+            </div>
+            <button class="order-btn">
+              Søk og bestill <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </footer>
+        </div>
+      </section>
+      <section class="advertisement">
+        <h2>Våre billigeste flybilletter</h2>
+        <div class="advertisement-grid">
+          <article>
+            <div class="img"></div>
+            <h1>Destination</h1>
+            <p>Dirkete fra Oslo</p>
+            <hr />
+            <h1>549,-</h1>
+          </article>
+          <article>
+            <div class="img"></div>
+            <h1>Destination</h1>
+            <p>Dirkete fra Oslo</p>
+            <hr />
+            <h1>549,-</h1>
+          </article>
+          <article>
+            <div class="img"></div>
+            <h1>Destination</h1>
+            <p>Dirkete fra Oslo</p>
+            <hr />
+            <h1>549,-</h1>
+          </article>
+          <article>
+            <div class="img"></div>
+            <h1>Destination</h1>
+            <p>Dirkete fra Oslo</p>
+            <hr />
+            <h1>549,-</h1>
+          </article>
+        </div>
+        <div class="grid-area">
+          <div class="image1 grid-item"></div>
+          <div class="text1 grid-item"></div>
+          <div class="image2 grid-item"></div>
+          <div class="text2 grid-item"></div>
+          <div class="image3 grid-item"></div>
+          <div class="text3 grid-item"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

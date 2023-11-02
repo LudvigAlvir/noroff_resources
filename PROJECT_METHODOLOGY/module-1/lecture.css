@@ -1,0 +1,14 @@
+.primary-header {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.primary-nav {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+.logo {
+	width: 30%;
+	text-align: center;
+}

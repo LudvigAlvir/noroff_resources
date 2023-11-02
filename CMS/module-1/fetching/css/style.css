@@ -1,0 +1,10 @@
+.is-layout-flex {
+	display: flex;
+}
+h2 {
+	font-size: 3rem;
+}
+.wp-block-column {
+	flex-grow: 1;
+	flex-basis: 0;
+}

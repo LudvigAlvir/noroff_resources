@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* repeat(2, 1fr) */
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  aspect-ratio: 3/2;
+}
+h2 {
+  align-self: center;
+}
+.item-2,
+.item-4 {
+  background-image: url(../images/drage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-1 {
+    order: 1;
+  }
+  .item-2 {
+    order: 2;
+  }
+  .item-3 {
+    order: 4;
+  }
+  .item-4 {
+    order: 3;
+  }
+}

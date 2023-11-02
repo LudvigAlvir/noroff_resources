@@ -1,0 +1,11 @@
+- Create domain
+- Generate SSH for FTP
+- Connect with FileZilla
+- Create new wordpress site
+- Upload wordpress site
+- Create database in control panel
+- Export local database
+- Import local database to one.com
+- Change config.php to connect
+
+- Edit the page one your own domain

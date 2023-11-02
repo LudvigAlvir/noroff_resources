@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+.image {
+  width: 25%;
+
+  height: 300px;
+  background-image: url(../../../extra/square_days/images/drage.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 1s ease-out;
+}
+.flex:hover .image {
+  filter: blur(10px);
+}
+
+.flex .image:hover {
+  width: 100%;
+  filter: blur(0px);
+  z-index: 10;
+}

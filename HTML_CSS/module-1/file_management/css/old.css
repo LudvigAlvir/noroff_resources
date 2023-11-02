@@ -1,0 +1,11 @@
+img {
+  width: 700px;
+  max-width: 90%;
+}
+
+.container {
+  background-image: url(../images/drage.jpg);
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

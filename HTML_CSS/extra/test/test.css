@@ -1,0 +1,15 @@
+.container {
+  background-color: red;
+}
+
+.item {
+  min-height: 100px;
+  background-color: green;
+  margin: 1rem;
+  display: block;
+  border: 10px solid black;
+  animation: alternate infinite;
+}
+.container > .item > .item {
+  height: 200px;
+}

@@ -1,0 +1,15 @@
+:root {
+  --primary-background: #e26;
+  --padding-medium: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: var(--primary-background);
+  padding: var(--padding-medium);
+}

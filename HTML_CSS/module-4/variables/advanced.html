@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="advanced.css" />
+		<script
+			src="https://kit.fontawesome.com/349a7d6f47.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<input
+				type="radio"
+				id="nr1"
+				name="change"
+				checked />
+			<label for="nr1">😇</label>
+			<input
+				type="radio"
+				id="nr2"
+				name="change" />
+			<label for="nr2">😆</label>
+			<input
+				type="radio"
+				id="nr3"
+				name="change" />
+			<label for="nr3">🍲</label>
+		</header>
+		<main>
+			<div class="container">
+				<div class="intro"><h2>Click on the emojis</h2></div>
+				<div class="item-1">
+					<h2>Switching content to be displayed</h2>
+				</div>
+				<div class="item-2">
+					<h2>New title</h2>
+					<p>
+						Switching variables and class atributes based on if checkboxes are
+						checked.
+					</p>
+				</div>
+			</div>
+		</main>
+		<script>
+			function test() {
+				if (
+					document.querySelector("html:has(i ~ button) i") ===
+					document.querySelector("i:has(~ button")
+				)
+					return true;
+			}
+			try {
+				test();
+			} catch (error) {
+				alert("Your browser does not support the :has selector");
+			}
+		</script>
+	</body>
+</html>

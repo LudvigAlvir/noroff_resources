@@ -1,0 +1,16 @@
+:root {
+  --blue: #ff00ff;
+  --width: 100%;
+}
+.item {
+  background-color: var(--blue);
+  height: 500px;
+  width: var(--width);
+}
+
+@media (max-width: 800px) {
+  :root {
+    --width: 50px;
+    --blue: #000099;
+  }
+}
